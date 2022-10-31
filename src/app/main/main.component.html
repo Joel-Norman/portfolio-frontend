@@ -1,0 +1,18 @@
+<!--<nav class="navbar" style="background-color: #272829;">
+  <div class="container" >
+    <div class="col">
+
+      </div>
+        <a routerLink="/main" style="text-decoration: none; font-size:20px ; color:white ;background-color:rgba(118, 95, 160, 0) ; border-color:rgba(0,0,0,0); "><i class="bi bi-house-door" style="color: #149ddd;"></i> Main</a>
+        <button class="navbar-brand" (click)="goInicio()" style="color:white ;background-color:rgba(118, 95, 160, 0) ; border-color:rgba(0,0,0,0); "><i class="bi bi-house-door" style="color: #149ddd;"></i> Main</button>
+        <button class="navbar-brand" (click)="goCertificados()"style="color:white ;background-color:rgba(95, 158, 160, 0) ; border-color:rgba(0,0,0,0);">Certificates</button>
+        <button class="navbar-brand" (click)="goContacto()"style="color:white ;background-color:rgba(95, 158, 160, 0) ; border-color:rgba(0,0,0,0);">Contact</button>
+        <button class="navbar-brand" (click)="goEditar()"style="color:white ;background-color:rgba(95, 158, 160, 0) ; border-color:rgba(0,0,0,0);" *ngIf="isAdmin">Edit</button>
+        <button class="navbar-brand" (click)="goUsers()"style="color:white ;background-color:rgba(95, 158, 160, 0) ; border-color:rgba(0,0,0,0);" *ngIf="isAdmin">Users</button>
+        <button class="navbar-brand" (click)="Logout()"style="color:white ;background-color:rgba(95, 158, 160, 0) ; border-color:rgba(0,0,0,0);" *ngIf="tokenservice.isLoggedIn()"><i class="bi bi-box-arrow-right"></i> Logout</button>
+       
+    
+      </div>
+</nav>-->
+<app-ngnavbar ></app-ngnavbar>
+<router-outlet></router-outlet>

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/* color de fondo
+
+    */
+
+body{  
+    background-color: rgb(255, 255, 255);
+   
+    /*
+    color de titulos #173b6c
+    color de bustitulos neggro
+    color de texto rgb(80 40 41)
+    color de iconos #149ddd
+    */
+    /*background-image: radial-gradient(rgb(80, 19, 194),#2e1065);*/
+    /**background-image: radial-gradient(rgb(20, 31, 85),rgb(16, 25, 67)) ;
+    height: 100vh;
+   /* background-image:radial-gradient(#331270,#331270,#331270,rgba(35, 35, 35, 0.993)) ;
+     */  
+     overflow-y:scroll;
+}

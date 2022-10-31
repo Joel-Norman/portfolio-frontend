@@ -1,0 +1,64 @@
+*{
+    color: rgb(80 40 41);
+}
+h1{
+    color: #173b6c;
+}
+.header{
+    position: relative;
+}
+.card-box{
+    background-color: rgba(81, 24, 187, 0);
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.307);
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+   
+}
+.card-box-perfil{
+    background-color: rgba(67, 187, 24, 0);
+    height: min-content;
+    width: min-content;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.307);
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.card-box-details{
+    background-color: rgba(67, 187, 24, 0);
+    
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.307);
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+   
+}
+.cardc{
+    background-color: #1c1c1c48;
+    border-radius: 10px;
+   
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    height: 250px;
+}
+.empty-block{
+    height: 256px;
+    width: 256px;
+    background-color: rgb(255, 255, 255);
+}
+#image-perfil{
+    
+    height: 300px;
+}
+#head-p{
+    
+}
+

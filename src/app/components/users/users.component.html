@@ -1,0 +1,45 @@
+<div class="container" style="border-style: solid;border-bottom: 0px;border-top: 0px; border-color: rgb(231, 229, 229);border-width: 1px;">
+    <br>
+    <div class="row" >
+      <div class="box">
+            <h3 >User Admin</h3>
+            <div class="mb-3">
+              <label for="userAdmin" class="form-label" style="text-align:left;">Admin</label>
+              <input type="email" [(ngModel)]="admin.name"class="input-mail" id="userAdmin" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+                <label for="userPass" class="form-label" style="text-align:left;">Password</label>
+                <input type="password" [(ngModel)]="admin.password" class="input-mail" id="userPass" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="userPassRepeat" class="form-label" style="text-align:left;">Repeat Password</label>
+                <input type="password" [(ngModel)]="passwordAdmin" class="input-mail" id="userPassRepeat" aria-describedby="emailHelp">
+                
+              </div>
+              <button class="btn btn-primary" (click)="saveAdmin()"><i class="bi bi-hdd"></i> Save</button> 
+              <p *ngIf="messageAlertAdmin">Changes saved</p>
+              <h3 >User Client</h3>
+              <div class="mb-3">
+                <label  class="form-label" style="text-align:left;">User</label>
+                <input type="email" [(ngModel)]="user.name" class="input-mail"  aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                  <label  class="form-label" style="text-align:left;">Password</label>
+                  <input type="password" [(ngModel)]="user.password" class="input-mail"  aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label" style="text-align:left;">Repeat Password</label>
+                  <input type="password" [(ngModel)]="passwordUser" class="input-mail"  aria-describedby="emailHelp">
+                  
+                </div> 
+                
+                <button  (click)="saveUser()" class="btn btn-primary"><i class="bi bi-hdd"></i> Save</button>
+                <p *ngIf="messageAlertUser">Changes saved</p>
+        </div>
+    </div>
+      
+</div>

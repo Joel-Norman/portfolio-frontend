@@ -1,0 +1,227 @@
+<!--<div class="container">
+    <br>   
+    <div class="row" id="head-p">
+        <div class="col-md-4">
+          <div class="card-box-perfil">
+            <img [src]="imagen" class="rounded" alt="...">
+          </div> 
+            
+            
+        </div>
+        
+        <div class="col-md-8">
+          <div class="card-box-details">
+            <h1 style="text-align: center; color: rgb(0, 0, 0);">{{perfil.name}} {{perfil.surname}}</h1>
+            <p style="text-align: center ; color : black">{{perfil.description}}   
+            </p>
+          </div>
+            
+    </div>
+    <br>
+    <br>
+    </div>
+    <!--Carrusel
+
+    <div class="row">
+      <div class="card" *ngFor="let item of trainings">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <img src="assets/imagenes/face_card.png" alt="...">
+                  
+            </div>
+            <div class="col-4">
+              <h5>{{headTraining.institute}}</h5>
+                  <h6>{{headTraining.address}}</h6>
+                  <p>{{headTraining.starDate}} - {{headTraining.finishDate}}</p>
+                  <p>{{headTraining.details}}</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+    </div>
+    
+    <div class="card-box">
+      <h2 style="text-align: center;">Training</h2>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/imagenes/acceso_header.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>{{headTraining.institute}}</h5>
+                    <h6>{{headTraining.address}}</h6>
+                    <p>{{headTraining.starDate}} - {{headTraining.finishDate}}</p>
+                    <p>{{headTraining.details}}</p>
+            </div>
+            <!--<div class="cardc">
+                <div class="carousel-caption d-none d-md-block">
+                  <img src="assets/imagenes/acceso_header.jpg" class="d-block w-100" alt="...">
+                  
+                    <h5>{{headTraining.institute}}</h5>
+                    <h6>{{headTraining.address}}</h6>
+                    <p>{{headTraining.starDate}} - {{headTraining.finishDate}}</p>
+                    <p>{{headTraining.details}}</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" *ngFor="let item of trainings">
+            <div class="cardc">
+                <div class="carousel-caption d-none d-md-block">
+                  <img src="assets/imagenes/acceso_header.jpg" class="d-block w-100" alt="...">
+                    <h5>{{item.institute}}</h5>
+                    <h6>{{item.address}}</h6>
+                    <p>{{item.starDate}} - {{item.finishDate}}</p>
+                    <p>{{item.details}}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+  
+    <!--Carrusel
+    
+    <div class="card-box">
+      <h2 style="text-align: center;">Experience</h2>
+    <div id="listExperience" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <div class="cardc">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{headExperience.business}}</h5>
+                    <h6>{{headExperience.position}} / {{headExperience.job}}</h6>
+                    <p>{{headExperience.starDate}} - {{headExperience.finishDate}}</p>
+                    <p>{{headExperience.details}}</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" *ngFor="let item of experiences">
+            <div class="cardc">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{item.business}}</h5>
+                    <h6>{{item.position}} / {{item.job}}</h6>
+                    <p>{{item.starDate}} - {{item.finishDate}}</p>
+                    <p>{{item.details}}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#listExperience" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#listExperience" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    
+</div>-->
+<div class="container" style="border-style: solid;border-bottom: 0px;border-top: 0px; border-color: rgb(231, 229, 229);border-width: 1px;">
+  <div class="row">
+    <!--Image profile-->
+    <div class="col-12">
+      <div class="header" *ngIf="servicePerfil.getProfile().front_page">
+        <img [src]="'data:image/PNG;base64,'+servicePerfil.getProfile().front_page" class="d-block w-100" alt="...">
+        <img [src]="'data:image/PNG;base64,'+servicePerfil.getProfile().imagen" style="border-radius: 50%; position: absolute; left: 10px; bottom:10px;" alt="">
+        
+        <div style="position: absolute; left: 50%; bottom:10px;">
+          <h1 style="text-align: center; color: rgb(255, 255, 255);">{{servicePerfil.getProfile().name}} {{servicePerfil.getProfile().surname}}</h1>
+          <p style="text-align: center ; color : rgb(255, 255, 255)">{{servicePerfil.getProfile().description}}</p>
+        </div>
+        
+      </div>
+      <div class="header" *ngIf="!servicePerfil.getProfile().front_page">
+        <img class="d-block w-100" style="background-color: white; height: 460px;">
+        <div style="background-color: antiquewhite; border-radius: 50%; position: absolute; left: 10px; bottom:10px; height:256px ;width: 256px;"></div>
+        <div style="position: absolute; left: 50%; bottom:10px;">
+          <h1 style="text-align: center; color: rgb(0, 0, 0);">{{servicePerfil.getProfile().name}} {{servicePerfil.getProfile().surname}}</h1>
+          <p style="text-align: center ; color : rgb(5, 5, 5)">{{servicePerfil.getProfile().description}}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <h1 *ngIf="servicePerfil.getProfile().skill.length!=0" style="text-align: center;">Skill</h1>
+  <div class="row">
+    <div class="col-6" *ngFor="let item of servicePerfil.getProfile().skill">
+      <label>{{item.name}}</label>
+        <div class="progress" >
+    
+        <div class="progress-bar" role="progressbar" aria-label="Example with label" [style]="getValue(item)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{item.value}}%</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h1 *ngIf="servicePerfil.getProfile().training.length!=0" style="text-align: center;">Training</h1>
+  <div class="row" style="margin-top: 10px; " *ngFor="let item of servicePerfil.getProfile().training;index as i;">
+    <div class="col-3" *ngIf="0==i%2" style="box-shadow: 20px 0px 20px #eceaea;">
+      <img *ngIf="item.imagen" [src]="'data:image/PNG;base64,'+item.imagen" class="d-block w-100" alt="...">
+      <div *ngIf="!item.imagen" class="empty-block">
+
+      </div>
+    </div>
+    <div class="col-9" *ngIf="0==i%2" style="text-align: center;" >
+      <h6>{{item.address}}</h6>
+      <p>{{item.starDate}} - {{item.finishDate}}</p>
+      <p>{{item.details}}</p>
+      
+    </div>
+    
+    <div class="col-9" *ngIf="1==i%2" style="text-align: center;" >
+      <h6>{{item.address}}</h6>
+      <p>{{item.starDate}} - {{item.finishDate}}</p>
+      <p>{{item.details}}</p>
+      
+    </div>
+    <div class="col-3" *ngIf="1==i%2" style="box-shadow: -20px 0px 20px #eceaea;">
+      <img *ngIf="item.imagen" [src]="'data:image/PNG;base64,'+item.imagen" class="d-block w-100" alt="...">
+      <div *ngIf="!item.imagen" class="empty-block">
+
+      </div>
+    </div>
+  </div>
+<br>
+  <h1 *ngIf="servicePerfil.getProfile().experience.length!=0" style="text-align: center;">Experience</h1>
+ 
+  <div class="row" style="margin-top: 10px; " *ngFor="let item of servicePerfil.getProfile().experience;index as i;">
+    <div class="col-3" *ngIf="0==i%2" style="box-shadow: 20px 0px 20px #eceaea;">
+      <img *ngIf="item.imagen" [src]="'data:image/PNG;base64,'+item.imagen" class="d-block w-100" alt="...">
+      <div *ngIf="!item.imagen" class="empty-block">
+
+      </div>
+    </div>
+    <div class="col-9" *ngIf="0==i%2" style="text-align: center;" >
+      <h6>{{item.address}}</h6>
+      <p>{{item.starDate}} - {{item.finishDate}}</p>
+      <p>{{item.details}}</p>
+      
+    </div>
+    
+    <div class="col-9" *ngIf="1==i%2" style="text-align: center;" >
+      <h6>{{item.address}}</h6>
+      <p>{{item.starDate}} - {{item.finishDate}}</p>
+      <p>{{item.details}}</p>
+      
+    </div>
+    <div  class="col-3" *ngIf="1==i%2" style="box-shadow: -20px 0px 20px #eceaea;">
+      <img *ngIf="item.imagen" [src]="'data:image/PNG;base64,'+item.imagen" class="d-block w-100" alt="...">
+      <div *ngIf="!item.imagen" class="empty-block">
+
+      </div>
+    </div>
+  </div>
+</div>

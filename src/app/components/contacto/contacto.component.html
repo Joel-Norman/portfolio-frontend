@@ -1,0 +1,44 @@
+<div class="container" style="border-style: solid;border-bottom: 0px;border-top: 0px; border-color: rgb(231, 229, 229);border-width: 1px;">
+    <br>
+    <br>
+
+    <div class="list-group list-group-horizontal" style="width: min-content;margin:auto">
+        
+        <li class="list-group-item" *ngFor="let item of servicePerfil.getProfile().contact">
+            <div class="box" >
+                <img src="{{item.source_card}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <label for="">{{item.details}}</label>
+                </div>
+              </div>
+        </li>
+        
+      </div>
+
+    <div class="row" >
+        <div class="box-mail">
+            <h3 style="color: #173b6c;">Send me email</h3>
+            <div class="mb-3">
+              <label for="email" class="label-form" style="text-align:left;">You email address</label>
+              <input type="email" class="input-mail" id="email" aria-describedby="emailHelp" [(ngModel)]="mail.email">
+              
+            </div>
+            <div class="mb-3">
+                <label for="asunto" class="form-label" style="text-align:left;">Subject</label>
+                <input type="email" class="input-mail" id="asunto" aria-describedby="emailHelp" [(ngModel)]="mail.subject">
+                
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label" style="text-align:left;">You Menssage</label>
+                <textarea style="height: 150px;" type="email" class="input-mail" id="message" aria-describedby="emailHelp" [(ngModel)]="mail.message">
+                </textarea>
+              </div>
+            
+            
+            <button class="btn btn-primary" (click)="sendMail()"><i class="bi bi-send"></i> Send</button>
+            <p *ngIf="isVisible">Message sent</p>
+          </div>
+          
+    </div>
+      
+</div>

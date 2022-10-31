@@ -1,0 +1,57 @@
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+h3 i{
+  color: #149ddd;
+  font-size: 25px;
+}
+.box-login {
+  
+    height: 100vh;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box{
+    box-shadow: 0px 0px 20px #c8c8c8;
+    border-radius: 8px;
+    
+    
+  
+    color:rgb(80 40 41);
+    width: 40%;
+   
+  }
+  .form-head{
+    background-color: #040b14;
+    border-radius:8px 8px 0px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  .form-body,
+  .form-footer{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  button{
+    color: white;
+    margin-top: 5px;
+  }
+  #bfacebook{
+    margin-left: 2px;
+    margin-left: 2px;
+    text-align: center;
+    border-radius: 8px;
+    
+  }
+  #bSignin{
+    color: black;
+  }

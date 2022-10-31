@@ -1,0 +1,15 @@
+<div class="contaner">
+    <nav class="navbar" style="background-color:#040b14 ;">
+        <div class="container" >
+          <div class="col">
+            
+            </div >
+            <div *ngFor="let item of model">
+              <a   [class]="item.class" (click)="click(item)" [routerLink]="[item.link]" *ngIf="item.isVisible"><i [class]="item.icon" [style]="item.style"></i> {{item.label}}</a>
+             
+            </div>
+              
+            </div>
+      </nav>
+</div>
+

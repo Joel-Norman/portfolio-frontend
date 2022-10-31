@@ -1,0 +1,46 @@
+
+<div class="container">
+    <div class="box-login">
+        <div class="box">
+            <div class="form-head">
+                <h3><i class="bi bi-box-arrow-in-down"></i>
+                   Sign in
+                </h3>
+            </div>
+            <div class="form-body">
+                <br>
+                <h5 for="">User Admin</h5>
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Admin" [(ngModel)]="newUser.name">
+                    
+                </div>
+                <div class="form-group">
+                    <br>
+                    <input type="password" class="form-control"  placeholder="Password" [(ngModel)]="newUser.password" >
+                </div>
+                <div class="form-group">
+                    <br>
+                    <input type="password" class="form-control"  placeholder="Repeat password" [(ngModel)]="repeatPassword">
+                </div>
+                <br>
+                <h5 for="">Perfil</h5>
+                <div class="form-group">
+                    
+                    <input type="text"  class="form-control" aria-describedby="emailHelp" placeholder="Enter name" [(ngModel)]="newUser.perfil.name"> 
+                </div>
+                <div class="form-group">
+                    <br>
+                    <input type="text"  class="form-control"  aria-describedby="emailHelp" placeholder="Enter last name" [(ngModel)]="newUser.perfil.surname">  
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-block" (click)="saveNewUser()">Sign in</button>
+                <button type="button" class="btn btn-link" style="color: black;" (click)="goLogin()">Log in</button>
+                
+            </div>
+            <p *ngIf="alertMessage" style="color:orangered;margin-top: 10px; margin-left: 15px;">already registered user!</p>
+        </div>
+    </div>
+
+</div>

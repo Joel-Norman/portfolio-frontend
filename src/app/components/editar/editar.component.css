@@ -1,0 +1,112 @@
+
+*{
+    color:rgb(80 40 41);
+}
+h5{
+    color:#173b6c;
+}
+
+.modal-content{
+    /*
+    background-color: rgb(81, 24, 187);
+    background-color:rgb(20, 36, 116);*/
+    
+}
+.form-control{
+    /*background-color: rgba(81, 24, 187, 0.129);
+    background-color: rgb(22, 39, 125);*/
+    color:rgb(80 40 41);
+}
+.card-box{
+    
+    padding: 10px;
+    margin: 10px;
+   
+}
+.box{
+    box-shadow: 0px 5px 10px #dad9d9;
+    text-align: center;
+    
+}
+.card-box-perfil{
+    /*background-color: rgba(67, 187, 24, 0);*/
+    height: min-content;
+    width: min-content;
+    /*border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.307);
+    border-width: 2px;
+    border-style: solid;*/
+    padding: 5px;
+    margin: 5px;
+   
+}
+.card-box-details{
+    /*background-color: rgba(67, 187, 24, 0);
+    
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.307);
+    
+    border-width: 2px;
+    border-style: solid;*/
+    padding: 5px;
+    margin: 5px;
+   
+}
+.input-mail{
+    display: block;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #149ddd;
+    color: rgb(80 40 41);
+    width: 100%;
+    margin-top:5px;
+}
+.input-mail:focus {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #149ddd;
+    outline: none;
+  }
+
+
+i{
+    font-size: 18px;
+    color: white;
+}
+button{
+    margin: 2px;
+    color: white;
+}
+a{
+    margin: 2px;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: #173b6c;
+}
+table{
+    width: 100%;
+    margin: 5px; 
+    border:5px ; 
+    border-color: white;
+}
+#contact-list{
+    box-shadow: 0px -10px 10px #dad9d9;
+    text-align: center;
+    width: 15rem;
+}
+.header{
+    position: relative;
+}
+.icon-success{
+    position: absolute;
+    left: 20px;
+    
+    bottom: auto;
+}

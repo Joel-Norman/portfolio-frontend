@@ -1,0 +1,18 @@
+.item-menu{
+    text-decoration: none; 
+    font-size:20px ;
+    color:#9e9e9e ;
+    background-color:rgba(118, 95, 160, 0) ; 
+    border-color:rgba(0,0,0,0);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item-menu-active{
+    text-decoration: none; 
+    font-size:20px ;
+    color:white ;
+    background-color:rgba(118, 95, 160, 0) ; 
+    border-color:rgba(0,0,0,0);
+    margin-left: 10px;
+    margin-right: 10px;
+}

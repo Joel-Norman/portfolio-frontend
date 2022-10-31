@@ -1,0 +1,23 @@
+<div class="container" style="border-style: solid;border-bottom: 0px;border-top: 0px; border-color: rgb(231, 229, 229);border-width: 1px;">
+    <br>
+    <br>
+
+    <div class="list-group list-group-horizontal" style="width: min-content;margin:auto">
+        <li class="list-group-item" *ngFor="let item of servicePerfil.getProfile().certificate">
+            <div class="box">
+                <img src="assets/imagenes/certificate2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{item.source}}" target="_blank">{{item.title}}</a>
+                    <br>
+                    <label for="">{{item.details}}</label>
+                    
+                </div>
+            </div>
+            
+        </li>
+        
+    </div>
+
+    
+      
+</div>

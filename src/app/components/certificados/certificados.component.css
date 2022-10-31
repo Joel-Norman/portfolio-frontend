@@ -1,0 +1,18 @@
+*{
+    color:rgb(80 40 41);
+}
+
+.box{
+    box-shadow: 0px 0px 20px #dad9d9;
+    text-align: center;
+    width: 15rem;
+}
+a{
+    font-size: 20px;
+    color:  #173b6c;
+    text-decoration: none;
+}
+label{
+    color: rgb(80 40 41);
+}
+/*background-color: rgb(81, 24, 187)*/
