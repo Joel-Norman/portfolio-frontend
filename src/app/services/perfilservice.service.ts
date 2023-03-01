@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Perfil } from '../models/Perfil';
 import { TokenService } from './tokenservice';
-import { TitleStrategy } from '@angular/router';
+import { Router, TitleStrategy } from '@angular/router';
 import { host } from '../host/host';
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,8 @@ export class PerfilserviceService {
   profile:Perfil;
   constructor(
     private http:HttpClient,
-    private tokenService:TokenService) { 
+    private tokenService:TokenService,
+    private router:Router) { 
       this.profile=new Perfil();
     }
   UrlGet = host+'/perfil/';
@@ -59,6 +60,8 @@ export class PerfilserviceService {
           this.profile=data;
         }
         
+      },error =>{
+        this.router.navigate(['/login']);
       }
     );
     
