@@ -58,7 +58,7 @@ export class UsersComponent implements OnInit {
       this.admin.role.push(role2);
       this.admin.perfil=this.servicePerfil.getProfile()
       this.serviceUser.saveUser(this.admin).subscribe( data => {
-        
+        this.messageAlertAdmin=true;
       } );
     }
   }
@@ -70,7 +70,7 @@ export class UsersComponent implements OnInit {
       this.user.role.push(role);
       this.user.perfil=this.servicePerfil.getProfile()
       this.serviceUser.saveUser(this.user).subscribe( data => {
-        
+        this.messageAlertUser=true;
       } );
     }
   }
